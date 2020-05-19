@@ -1,26 +1,82 @@
 <!doctype html>
 <html class="" lang="en">
 
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
 
-    <title>Week 5, Part 2</title>
+  <title>W5, P2: Simple Game</title>
 
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
+  <script src="/js/bootstrap.min.js" defer></script>
+  <script src="/js/scripts.js" defer></script>
+</head>
+<body>
 
-  <body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">NoRa.</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <h1>Week 5, Part 2</h1>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.itsnicethat.com/" target="_blank">That's Nice</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.timeout.com/seoul/music/mmm-records" target="_blank">Another Mmm</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://hypebeast.com/2020/1/crush-korea-hip-hop-artist-interview" target="_blank">Shin Hyo-seob</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">You Want More?</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="https://pitchfork.com/reviews/albums/tom-misch-yussef-dayes-what-kinda-music/" target="_blank">Yussef Dayes, Words</a>
+            <a class="dropdown-item" href="https://www.youtube.com/watch?v=NwVtIPeYIeQ" target="_blank">Yussef, mv</a>
+            <a class="dropdown-item" href="https://www.youtube.com/watch?v=Unesf5yv93o" target="_blank">Mason London/Stormzy, mv</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-	</body>
+  <main role="main" class="container">
+
+    <div class="starter-template">
+      <h1>Welcome to NoRa<br> Where you can nora</h1>
+      <p class="lead">Nora means play in Korean<br> Please enjoy the story game</p>
+    </div>
+
+  <h1>A Story from Me to You about Us</h1>
+
+  <div>
+    <label for="customname">Enter your name:</label>
+    <input id="customname" type="text" placeholder="Mandoo"><br>
+    <label for="customother">Enter friend's name:</label>
+    <input id="customother" type="text" placeholder="Smalls"><br>
+    <label for="customtime">Enter a time:</label>
+    <input id="customtime" type="text" placeholder="2:00pm"><br>
+    <label for="customfood">Enter a food:</label>
+    <input id="customfood" type="text" placeholder="Howlin Rays"><br>
+    <label for="customplace">Enter a place:</label>
+    <input id="customplace" type="text" placeholder="Union Station"><br>
+  </div>
+  <div>
+    <label for="us">US</label><input id="us" type="radio" name="ukus" value="us" checked>
+    <label for="uk">KR</label><input id="uk" type="radio" name="ukus" value="uk">
+  </div>
+  <div>
+    <button class="randomize">Generate a Story</button>
+  </div>
+  <p class="story"></p>
+    </main>
+</body>
 
 </html>
