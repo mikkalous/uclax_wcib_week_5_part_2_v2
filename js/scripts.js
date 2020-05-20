@@ -60,23 +60,23 @@ function result() {
   }
 
   if(customOther.value !== '') {
-    let name = customOther.value;
-    newStory = newStory.replace('Smalls',name);
+    let name2 = customOther.value;
+    newStory = newStory.replace('Smalls',name2);
   }
 
   if(customTime.value !== '') {
-    let name = customTime.value;
-    newStory = newStory.replace('2:00pm',name);
+    let name3 = customTime.value;
+    newStory = newStory.replace('2:00pm',name3);
   }
 
   if(customFood.value !== '') {
-    let name = customFood.value;
-    newStory = newStory.replace('Howlin Rays',name);
+    let name4 = customFood.value;
+    newStory = newStory.replace('Howlin Rays',name4);
   }
 
   if(customPlace.value !== '') {
-    let name = customPlace.value;
-    newStory = newStory.replace('Union Station',name);
+    let name5 = customPlace.value;
+    newStory = newStory.replace('Union Station',name5);
   }
 
   if(document.getElementById("uk").checked) {
